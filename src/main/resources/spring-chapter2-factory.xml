@@ -3,8 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--FactoryLifecycle-->
-    <bean id="factoryLifecycle" class="com.yunxi.interviewdemo.test.spring.factorylifecycle.FactoryLifecycle">
+    <!--Factory-->
+    <bean id="factoryLifecycle" class="com.yunxi.interviewdemo.test.spring.factory.Factory">
     </bean>
 
 </beans>

@@ -1,4 +1,4 @@
-package com.yunxi.interviewdemo.test.spring.beanlifcycle;
+package com.yunxi.interviewdemo.test.spring.bean;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanNameAware;
@@ -12,12 +12,12 @@ import org.springframework.context.ApplicationContextAware;
  * @Date 2018/09/04
  * @Description Bean生命周期
  */
-public class BeanLifecycle implements BeanNameAware, ApplicationContextAware, InitializingBean, DisposableBean {
+public class Person implements BeanNameAware, ApplicationContextAware, InitializingBean, DisposableBean {
     /**
      * 1. 构造器
      */
-    public BeanLifecycle() {
-        System.out.println("1. 【Bean级别】构造器执行了");
+    public Person() {
+        System.out.println("1 Person()");
     }
 
     /**
@@ -25,7 +25,7 @@ public class BeanLifecycle implements BeanNameAware, ApplicationContextAware, In
      */
     @Override
     public void setBeanName(String name) {
-        System.out.println("2. 【Bean级别】setBeanName方法执行了");
+        System.out.println("2 setBeanName(String name)");
     }
 
     /**
@@ -33,7 +33,7 @@ public class BeanLifecycle implements BeanNameAware, ApplicationContextAware, In
      */
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println("3. 【Bean级别】setApplicationContext方法执行了");
+        System.out.println("3 setApplicationContext(ApplicationContext applicationContext)");
     }
 
     /**
@@ -41,21 +41,21 @@ public class BeanLifecycle implements BeanNameAware, ApplicationContextAware, In
      */
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("4. 【Bean级别】afterPropertiesSet方法执行了");
+        System.out.println("4 afterPropertiesSet()");
     }
 
     /**
      * 5. init-method属性指定的方法
      */
     public void lifecycleInit() {
-        System.out.println("5. 【Bean级别】init-method指定的方法执行了");
+        System.out.println("5 lifecycleInit()");
     }
 
     /**
      * 6. Bean中的业务方法
      */
     public void sayHello() {
-        System.out.println("6. 【Bean级别】sayHello方法执行了");
+        System.out.println("6 sayHello()");
     }
 
     /**
@@ -63,13 +63,13 @@ public class BeanLifecycle implements BeanNameAware, ApplicationContextAware, In
      */
     @Override
     public void destroy() throws Exception {
-        System.out.println("7. 【Bean级别】destroy方法执行了");
+        System.out.println("7 destroy()");
     }
 
     /**
      * 8. destroy-method属性指定的方法
      */
     public void lifecycleInitDestroy() {
-        System.out.println("8. 【Bean级别】destroy-method属性指定的方法执行了");
+        System.out.println("8 lifecycleInitDestroy()");
     }
 }

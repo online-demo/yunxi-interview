@@ -3,8 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--ContainerLifecycle-->
-    <bean id="containerLifecycle" class="com.yunxi.interviewdemo.test.spring.containerlifecycle.ContainerLifecycle">
+    <!--Person-->
+    <bean id="beanLifecycle" class="com.yunxi.interviewdemo.test.spring.bean.Person"
+          init-method="lifecycleInit" destroy-method="lifecycleInitDestroy">
     </bean>
 
 </beans>
