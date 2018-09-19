@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
 /**
- * @Author 无双
+ * @Author 无双老师
  * @Date 2018/09/04
  * @Description Bean生命周期
  */
