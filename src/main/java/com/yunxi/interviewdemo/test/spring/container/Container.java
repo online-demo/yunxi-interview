@@ -6,7 +6,7 @@ import org.springframework.beans.factory.config.InstantiationAwareBeanPostProces
 import java.beans.PropertyDescriptor;
 
 /**
- * @Author 无双老师
+ * @Author 云析学院【无双老师】
  * @Date 2018/09/04
  * @Description 容器级生命周期
  */

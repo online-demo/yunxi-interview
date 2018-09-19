@@ -1,9 +1,9 @@
-package com.yunxi.interviewdemo.test.lock;
+package com.yunxi.interviewdemo.test.lock.reentrantlock;
 
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @Author 无双老师
+ * @Author 云析学院【无双老师】
  * @Date 2018/9/18
  * @Description
  */

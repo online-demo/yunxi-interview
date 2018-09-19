@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * @Author 无双老师
+ * @Author 云析学院【无双老师】
  * @Date 2018/8/25
  * @Description ConcurrentModificationException异常讲解
  */

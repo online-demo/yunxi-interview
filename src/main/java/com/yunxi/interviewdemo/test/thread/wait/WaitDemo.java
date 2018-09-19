@@ -1,7 +1,7 @@
 package com.yunxi.interviewdemo.test.thread.wait;
 
 /**
- * @Author 无双老师
+ * @Author 云析学院【无双老师】
  * @Date 2018/9/18
  * @Description wait方法测试
  */
