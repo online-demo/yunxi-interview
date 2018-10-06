@@ -6,13 +6,13 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Author 云析学院【无双老师】
  * @Date 2018/9/19
  * @Description 所谓公平锁，就是按照时间先后顺序，使先等待的线程先得到锁，
- * 公平锁不会产生饥饿锁，也就是只要排队等待，最终能等待到获取锁的机会
+ * 只要排队等待，最终能等待到获取锁的机会
  */
 public class FairLockDemo implements Runnable {
     //公平锁
-//    public static ReentrantLock lock = new ReentrantLock(true);
+    public static ReentrantLock lock = new ReentrantLock(true);
     //非公平锁
-    public static ReentrantLock lock = new ReentrantLock(false);
+//    public static ReentrantLock lock = new ReentrantLock(false);
     @Override
     public void run() {
         try {
@@ -25,7 +25,7 @@ public class FairLockDemo implements Runnable {
 
     public static void main(String[] args) throws InterruptedException {
         FairLockDemo test = new FairLockDemo();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 1; i <= 10; i++) {
             Thread t1 = new Thread(test, "线程" + i);
             t1.start();
         }
