@@ -11,7 +11,7 @@ public class FirstReentrantLock implements Runnable {
     /**
      * 重入锁
      */
-    public static ReentrantLock lock = new ReentrantLock();
+    public static ReentrantLock lock = new ReentrantLock(true);
 
     /**
      * 计数器

@@ -2,6 +2,7 @@ package com.yunxi.interviewdemo.test.spring.container;
 
 import org.springframework.beans.PropertyValues;
 import org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessorAdapter;
+import org.springframework.stereotype.Component;
 
 import java.beans.PropertyDescriptor;
 
