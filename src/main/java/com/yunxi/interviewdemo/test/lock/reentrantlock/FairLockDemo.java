@@ -46,14 +46,14 @@ public class FairLockDemo implements Runnable {
 
     public static void main(String[] args) throws InterruptedException {
         // 无锁
-        FairLockDemo test = new FairLockDemo();
-        withoutLock(test);
+//        FairLockDemo test = new FairLockDemo();
+//        withoutLock(test);
 
 
         // 有锁
-//        ReentrantLock lock = new ReentrantLock(true);
-//        FairLockDemo test = new FairLockDemo(lock);
-//        withLock(test);
+        ReentrantLock lock = new ReentrantLock(true);
+        FairLockDemo test = new FairLockDemo(lock);
+        withLock(test);
 
 
         Thread.sleep(1000);
